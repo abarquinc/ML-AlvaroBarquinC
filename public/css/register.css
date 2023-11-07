@@ -1,0 +1,184 @@
+
+.signupFrm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.form {
+    background-color: #ebebeb;
+    width: 100%;
+    border-radius: 8px;
+    padding: 20px 40px;
+    box-shadow: 0 10px 25px rgba(92, 99, 105, .2);
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.inputContainer {
+    position: relative;
+    height: 45px;
+    background-color: white;
+    margin-bottom: 17px;
+    
+}
+
+.input {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-size: 16px;
+    padding: 0 20px;
+    outline: none;
+    background: none;
+    z-index: 1;
+
+}
+
+/* Hide the placeholder texts (a) */
+
+
+
+.inputContainer ::placeholder {
+    color: transparent;
+}
+
+.label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
+    color: gray;
+}
+
+
+
+.botones{
+    text-align: center;
+}
+
+.botonenviar, .botonborrar{
+    display: inline-block;
+    padding: 15px 30px;
+    border:none;
+    background-color: blue;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.botonenviar:hover {
+    background-color: #4752f0;
+    transform: translateY(-2px);
+}
+
+.botonborrar:hover {
+    background-color: #4752f0;
+    transform: translateY(-2px);
+}
+
+
+
+
+
+.input:focus+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+    color: blue;
+}
+
+.input:focus {
+    border: 2px solid blue;
+}
+
+.input:not(:placeholder-shown)+.label {
+    top: -7px;
+    left: 3px;
+    z-index: 10;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+#fechaNacimiento{
+    width: 100%;
+    height: 100%;
+}
+
+h4{
+    font-size: 20px;
+}
+
+.CajaFechaNacimiento h4{
+margin-bottom: 15px;
+}
+
+
+.perfilDeUsuario h4{
+    text-align: left;
+    margin-bottom: 10px;
+}
+.opciones{
+    display: flex;
+    justify-content: center;
+
+}
+
+#perfilComprador{
+    margin-right: 30px;
+}
+
+#perfilVendedor{
+    margin-left: 40px;
+    margin-right: 30px;
+}
+
+
+.interes h4{
+    text-align: left;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+
+
+.option{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+}
+
+.seleccion{
+    display: flex;
+    align-items:  center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.estiloCheck{
+margin-right: 20px;
+}
+
+.estiloLabel{
+    font-size: 16px;
+}
+
+
+
