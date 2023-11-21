@@ -10,6 +10,9 @@ const port = process.env.PORT || 3001;
 
 app.listen (port, () => console.log(`Servidor funcionando bien en puerto ${port}`));
 
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '/views/home.html'));
+})
 
 app.get('/home.html', (req, res) => {
     res.sendFile(path.join(__dirname, '/views/home.html'));
