@@ -280,13 +280,14 @@ ul {
     }
 
     .logo{
-        width: 40%;
+        width: 80%;
         
     }
 
     .buscador{
-        width: 40%;
+        width: 60%;
         display: flex;
+        margin-right: 25px;
     }
 
      .buscador input{
@@ -344,7 +345,7 @@ ul {
 @media(min-width:769px) {
 
     .logo{
-        width: 50%;
+        width: 70%;
     }
     .encabezado{
         display: flex;
@@ -386,8 +387,8 @@ ul {
 
     .compra{
         font-size: 15px;
-        margin-top: 25px;
-        margin-left: 70px;
+        margin-top: 20px;
+       
     }
 
     li{
